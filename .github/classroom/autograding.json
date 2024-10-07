@@ -1,0 +1,14 @@
+{
+    "tests": [
+        {
+            "name": "Test: Check Petal Length of 3rd Versicolor Observation",
+            "setup": "",
+            "run": "bash script.sh",
+            "input": "",
+            "output": "5.5",
+            "comparison": "exact",
+            "timeout": 10,
+            "points": 2
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+name: Classroom Autograding
+
+on: [push]
+
+jobs:
+  autograding:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository content
+      uses: actions/checkout@v2
+
+    - name: Prepare environment
+      run: |
+        mkdir -p ~/data/
+        cp iris.csv ~/data/iris.csv
+
+    - name: Run autograding
+      run: |
+        bash script.sh
